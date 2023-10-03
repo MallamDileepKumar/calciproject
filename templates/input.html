@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calciapp</title>
+</head>
+<body bgcolor="orange">
+<center>
+<form action="./calci" method="POST">
+    {% csrf_token %}
+    First number: <input type="number" name="t1">
+    Second number: <input type="number" name="t2"><br><br>
+    <input type="submit" name="calci" value="ADD">
+    <input type="submit" name="calci" value="SUB">
+    <input type="submit" name="calci" value="MUL">
+    <input type="submit" name="calci" value="DIV">
+</form>
+    </center>
+
+</body>
+</html>
